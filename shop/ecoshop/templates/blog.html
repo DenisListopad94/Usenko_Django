@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<title>Blog </title>
+{% include "head.html" %}
+<html lang="en">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <body>
+    <div id="main">
+     {%include "header.html"%}
+      <!-- End header-->
+      <div class="ogami-breadcrumb">
+        <div class="container">
+          <ul>
+            <li> <a class="breadcrumb-link" href="../index"> <i class="fas fa-home"></i>Home</a></li>
+            <li> <a class="breadcrumb-link active" href="../blog">Blog list </a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End breadcrumb-->
+      <div class="blog-layout">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3">
+              <div class="blog-sidebar">
+                <button class="no-round-btn" id="filter-sidebar--closebtn">Close sidebar</button>
+                <div class="blog-sidebar_search">
+                  <div class="search_block">
+                    <form action="" method="get">
+                      <input class="no-round-input" type="text" placeholder="Search...">
+                    </form>
+                  </div>
+                </div>
+                <div class="blog-sidebar_categories">
+                  <div class="categories_top mini-tab-title underline">
+                    <h2 class="title">Categories</h2>
+                  </div>
+                  <div class="categories_bottom">
+                    <ul>
+                      <li> <a class="category-link" href="shop_grid+list_3col.html">Image</a></li>
+                      <li> <a class="category-link" href="shop_grid+list_3col.html">Nutrition Meal</a></li>
+                      <li> <a class="category-link" href="shop_grid+list_3col.html">Organic Planting</a></li>
+                      <li> <a class="category-link" href="shop_grid+list_3col.html">Recipes</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="blog-sidebar_recent-post">
+                  <div class="recent-post_top mini-tab-title underline">
+                    <h2 class="title">Recent post</h2>
+                  </div>
+                  <div class="recent-post_bottom">
+                    <div class="mini-post_block">
+                      <div class="mini-post_img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/mini_blog_img_1.png" alt="blog image"></a></div>
+                      <div class="mini-post_text"><a href="blog_detail_sidebar.html">Cook Dinner For 30 Minutes</a>
+                        <h5>January 23, 2019</h5>
+                      </div>
+                    </div>
+                    <div class="mini-post_block">
+                      <div class="mini-post_img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/mini_blog_img_2.png" alt="blog image"></a></div>
+                      <div class="mini-post_text"><a href="blog_detail_sidebar.html">Tips for Growing your own Organic</a>
+                        <h5>January 23, 2019</h5>
+                      </div>
+                    </div>
+                    <div class="mini-post_block">
+                      <div class="mini-post_img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/mini_blog_img_3.png" alt="blog image"></a></div>
+                      <div class="mini-post_text"><a href="blog_detail_sidebar.html">The Personality Trait That Makes..</a>
+                        <h5>January 23, 2019</h5>
+                      </div>
+                    </div>
+                    <div class="mini-post_block">
+                      <div class="mini-post_img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/mini_blog_img_4.png" alt="blog image"></a></div>
+                      <div class="mini-post_text"><a href="blog_detail_sidebar.html">The Personality Trait That Makes People</a>
+                        <h5>January 23, 2019</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-sidebar_tags">
+                  <div class="tags_top mini-tab-title underline">
+                    <h2 class="title">Search By Tags</h2>
+                  </div>
+                  <div class="tags_bottom"><a class="tag-btn" href="shop_grid+list_3col.html">organic</a><a class="tag-btn" href="shop_grid+list_3col.html">vegatable</a><a class="tag-btn" href="shop_grid+list_3col.html">fruits</a><a class="tag-btn" href="shop_grid+list_3col.html">fresh meat</a><a class="tag-btn" href="shop_grid+list_3col.html">fastfood</a><a class="tag-btn" href="shop_grid+list_3col.html">natural</a></div>
+                </div>
+              </div>
+              <div class="filter-sidebar--background" style="display: none"></div>
+            </div>
+            <div class="col-12 col-xl-9">
+              <div class="blog-list">
+                <div id="show-filter-sidebar">
+                  <h5> <i class="fas fa-bars"></i>Show sidebar</h5>
+                </div>
+                <div class="blog-block">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="blog-img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/list_img_1.png" alt="blog image"></a></div>
+                    </div>
+                    <div class="col-7">
+                      <div class="blog-text">
+                        <h5 class="blog-tag">Green</h5><a class="blog-title" href="blog_detail_sidebar.html">The Personality Trait That Makes People Happier</a>
+                        <div class="blog-credit">
+                          <p class="credit date">May 19, 2017</p>
+                          <p class="credit comment">3 Comment</p>
+                        </div>
+                        <p class="blog-describe">Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullam</p><a class="blog-readmore" href="blog_detail_sidebar.html">Read More<span> <i class="arrow_carrot-2right"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-block">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="blog-img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/list_img_2.png" alt="blog image"></a></div>
+                    </div>
+                    <div class="col-7">
+                      <div class="blog-text">
+                        <h5 class="blog-tag">Green</h5><a class="blog-title" href="blog_detail_sidebar.html">The Personality Trait That Makes People Happier</a>
+                        <div class="blog-credit">
+                          <p class="credit date">May 19, 2017</p>
+                          <p class="credit comment">3 Comment</p>
+                        </div>
+                        <p class="blog-describe">Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullam</p><a class="blog-readmore" href="blog_detail_sidebar.html">Read More<span> <i class="arrow_carrot-2right"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-block">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="blog-img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/list_img_3.png" alt="blog image"></a></div>
+                    </div>
+                    <div class="col-7">
+                      <div class="blog-text">
+                        <h5 class="blog-tag">Green</h5><a class="blog-title" href="blog_detail_sidebar.html">The Personality Trait That Makes People Happier</a>
+                        <div class="blog-credit">
+                          <p class="credit date">May 19, 2017</p>
+                          <p class="credit comment">3 Comment</p>
+                        </div>
+                        <p class="blog-describe">Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullam</p><a class="blog-readmore" href="blog_detail_sidebar.html">Read More<span> <i class="arrow_carrot-2right"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-block">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="blog-img"><a href="blog_detail_sidebar.html"><img src="assets/images/blog/list_img_4.png" alt="blog image"></a></div>
+                    </div>
+                    <div class="col-7">
+                      <div class="blog-text">
+                        <h5 class="blog-tag">Green</h5><a class="blog-title" href="blog_detail_sidebar.html">The Personality Trait That Makes People Happier</a>
+                        <div class="blog-credit">
+                          <p class="credit date">May 19, 2017</p>
+                          <p class="credit comment">3 Comment</p>
+                        </div>
+                        <p class="blog-describe">Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullam</p><a class="blog-readmore" href="blog_detail_sidebar.html">Read More<span> <i class="arrow_carrot-2right"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-pagination">
+                <ul>
+                  <li>
+                    <button class="no-round-btn smooth active">1</button>
+                  </li>
+                  <li>
+                    <button class="no-round-btn smooth">2</button>
+                  </li>
+                  <li>
+                    <button class="no-round-btn smooth">3</button>
+                  </li>
+                  <li>
+                    <button class="no-round-btn smooth"> <i class="arrow_carrot-2right"></i></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End partner-->
+{% include "footer.html"%}
+      <!-- End footer-->
+    </div>
+  </body>
+</html>
