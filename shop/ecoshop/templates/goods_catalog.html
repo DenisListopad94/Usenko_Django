@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All goods</title>
+</head>
+<body>
+<ul>
+    {% for good_key,good_value in goods.items%}
+        <li>{{good_key}}
+            <ul>
+                {% for good_data,data_value in good_value.items %}
+                {% if good_data == "delive" %}
+                <li>{{good_data}}
+                    {% for item in data_value %}
+                        {{item}}
+                    {%endfor%}</li>
+                {%else%}
+                    <li>{{good_data}} {{data_value}}</li>
+                {%endif%}
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
